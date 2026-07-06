@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BibleProject 中文视频资源</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="BibleProject 中文视频资源">
+        <img class="brand-logo" src="bibleproject-logo.svg" alt="BibleProject">
+      </a>
+    </header>
+
+    <main id="top">
+      <section id="videos" class="library-section" aria-label="视频列表">
+        <div class="library-head">
+          <div class="tools">
+            <label class="search-label" for="search">搜索视频</label>
+            <input id="search" type="search" placeholder="输入标题、书卷或英文名">
+            <button id="expand-all" type="button">全部展开</button>
+            <button id="collapse-all" type="button">全部收起</button>
+          </div>
+        </div>
+        <div id="video-library" class="video-library" aria-live="polite"></div>
+      </section>
+
+      <section id="player" class="player-section" aria-label="视频播放器">
+        <div class="player-shell">
+          <video id="main-player" controls preload="metadata">
+            您的浏览器不支持视频播放。
+          </video>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><a href="https://bibleproject.com/locale/downloads/zhs/">https://bibleproject.com/locale/downloads/zhs/</a></p>
+    </footer>
+
+    <script src="videos-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
